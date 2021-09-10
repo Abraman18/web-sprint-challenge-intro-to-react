@@ -11,6 +11,13 @@ const App = () => {
     Axios.get('https://swapi.dev/api/people').then((resp)=>setCharacters(resp)).catch(<h1>'Loading'</h1>)
   }, []);
   console.log(characters)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  const name = characters.data[0].name
+=======
+>>>>>>> b5bd72a9e4ecd72982458a05194853e5239f7027
+>>>>>>> b2d735f (got luke name on screen)
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
